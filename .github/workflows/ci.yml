@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build
         run: ./build.sh
-      - uses: csviri/git-ops-actions-deploy@0.0.5
+      - uses: csviri/git-ops-actions-deploy@0.0.6
         with:
           ops-repo-url: "https://url.to.ops.repo"
           version: ${{ github.sha }}
