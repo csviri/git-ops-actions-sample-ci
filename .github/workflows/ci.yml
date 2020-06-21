@@ -13,4 +13,4 @@ jobs:
       - uses: csviri/git-ops-actions-deploy@0.0.4
         with:
           ops-repo-url: "https://url.to.ops.repo"
-          version: "${GITHUB_SHA}"
+          version: ${{ github.sha }}
