@@ -12,4 +12,5 @@ jobs:
         run: ./build.sh
       - uses: csviri/git-ops-actions-deploy@0.0.2
         with:
-          who-to-greet: "Hello someone"
+          ops-repo-url: "https://url.to.ops.repo"
+          version: "${GITHUB_SHA}"
